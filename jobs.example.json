@@ -1,0 +1,68 @@
+{
+  "dropbox_folder": "/Videos",
+  "jobs": [
+    {
+      "type": "merge",
+      "output": "final_merge.mp4",
+      "resolution": "youtube",
+      "audio_mode": "replace",
+      "image_duration": 5.0,
+      "image_motion": "kenburns",
+      "videos": [
+        "https://.../clip1.mp4",
+        "https://.../anh1.jpg",
+        "https://.../clip2.mp4"
+      ],
+      "audios": [
+        "https://.../nhac.mp3"
+      ]
+    },
+    {
+      "type": "concat",
+      "output": "noi_video.mp4",
+      "resolution": "original",
+      "videos": [
+        "https://.../1.mp4",
+        "https://.../2.mp4"
+      ]
+    },
+    {
+      "type": "bulk",
+      "prefix": "san_pham",
+      "resolution": "tiktok",
+      "audio_mode": "replace",
+      "image_motion": "static",
+      "pairs": [
+        { "media": "https://.../videoA.mp4", "audio": "https://.../voiceA.mp3" },
+        { "media": "https://.../anhB.jpg",   "audio": "https://.../voiceB.mp3" }
+      ]
+    },
+    {
+      "type": "marketing",
+      "output": "marketing_giong_NU.mp4",
+      "resolution": "tiktok",
+      "image_motion": "kenburns",
+      "images": [
+        "https://.../product1.jpg",
+        "https://.../product2.jpg"
+      ],
+      "voice_text": "Be still and know that I am God. This prayer journal helps you find quiet time with Him each morning.",
+      "voice_name": "aria",
+      "voice_rate": "-8%",
+      "music": "https://.../background.mp3",
+      "music_volume": 0.18
+    },
+    {
+      "type": "marketing",
+      "output": "marketing_giong_NAM.mp4",
+      "resolution": "youtube",
+      "image_motion": "kenburns",
+      "images": [
+        "https://.../product1.jpg"
+      ],
+      "voice_text": "Walk with faith today. Discover devotionals written for women who love the Word.",
+      "voice_name": "guy",
+      "voice_rate": "-8%"
+    }
+  ]
+}
